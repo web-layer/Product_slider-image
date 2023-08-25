@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {}
+
+.perent {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.previewimg {
+    cursor: zoom-in;
+}
+.slider-img .img {
+    cursor: pointer;
+
+
+    padding: 5px;
+    margin-left: 6px 20px;
+
+
+}
+
+
+.images {
+
+    margin-top: 20px;
+
+}
+
+.images .left {
+    display: flex;
+}
+
+.popup img {
+    max-height: 80%;
+    max-width: 80%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    cursor: pointer;
+
+}
+
+.popup {
+    position: fixed;
+    background-color: #ffffff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+
+}
+
+
+.box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.changeimg {
+    max-width: 100%;
+    max-height: 100%;
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+
+
+.changeimg.hidden {
+    opacity: 0;
+}
+
+
+.btn1 {
+    padding: 10px;
+    position: absolute;
+    background: transparent;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 74%;
+    width: 20%;
+    top: 32px;
+}
+
+.btn2 {
+    padding: 10px;
+    position: absolute;
+    background: transparent;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 74%;
+    width: 20%;
+    top: 32px;
+
+}
+
+.btnleft {
+    position: absolute;
+    left: 10%;
+
+    background-color: rgb(85, 85, 85);
+    color: #ffffff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    visibility: hidden;
+
+
+
+
+}
+
+.btnright {
+    position: absolute;
+
+
+    transform: translate(50%, -50%);
+    background-color: rgb(85, 85, 85);
+    color: #ffffff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    visibility: hidden;
+
+
+}
+
+.btn1:hover .btnleft {
+    visibility: visible;
+    /* إظهار زر اليمين عند تحويل المؤشر فوق نافذة العرض المنبثقة */
+}
+
+.btn2:hover .btnright {
+    visibility: visible;
+    /* إظهار زر اليمين عند تحويل المؤشر فوق نافذة العرض المنبثقة */
+}
