@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-body {}
 
 .perent {
     display: flex;
@@ -145,10 +144,10 @@ body {}
 
 .btn1:hover .btnleft {
     visibility: visible;
-    /* إظهار زر اليمين عند تحويل المؤشر فوق نافذة العرض المنبثقة */
+
 }
 
 .btn2:hover .btnright {
     visibility: visible;
-    /* إظهار زر اليمين عند تحويل المؤشر فوق نافذة العرض المنبثقة */
+
 }

@@ -11,9 +11,6 @@ let currentIndex = 1;
     })
 
 
-
-
-
 imagedisplay.addEventListener("click", (e) => {
    // console.log(index)
         document.querySelector(".popup").innerHTML = `
